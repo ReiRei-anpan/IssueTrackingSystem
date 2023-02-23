@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>トップページ | 課題管理アプリケーション</title>
+</head>
+<body>
+    <h1>課題管理アプリケーション</h1>
+    <ul>
+        <li>
+<!--            th:hrefは aタグのhrefを書き換える @はタイムリーフでリンクを表すときの記号。
+                (タイムリーフでは aタグをつかったリンクを貼ることもできるのでデザインだけを確認したいときなんかに便利。(ナチュラルテンプレートという))-->
+            <a href="./issues/list.html" th:href="@{/issues}">一覧画面へ</a>
+        </li>
+    </ul>
+</body>
+</html>
